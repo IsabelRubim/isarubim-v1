@@ -1,0 +1,54 @@
+:root {
+    --color-pink-light: #f4dff8;
+    --color-pink-light-1: #efd0f5; 
+    --color-purple: #5840bb;
+    --color-primary: #D1C4E9;
+    --color-primary-dark: #bca2ec;
+    --color-yellow: #FFC107;
+
+    // BOX SHADOWS
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+}
+
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-dark-2);
+    background-image: linear-gradient(to right bottom, var(--color-pink-light), var(--color-pink-light-1)); // Função var para especificar a variável cor que definimos na raiz.
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh; // A altura mínima será 100vh, mas se a altura puder ser maior do que isso, então será simplesmente MAIOR!
+}
+
+::selection {
+    background-color: var(--color-primary);
+}
