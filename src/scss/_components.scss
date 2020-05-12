@@ -165,10 +165,10 @@
 
     &__item {
         width: 9rem;
-        height: 6rem;
+        height: 6rem;    
         border-radius: 10%;
-        background-image: linear-gradient(112.4deg, #b0aee1 44.9%, #87c5eb 94.5%);
-        box-shadow: var(--shadow-light);
+        background: linear-gradient(225deg, #5e44c8, #4f3aa8);
+        box-shadow:  var(--shadow-light);
         list-style: none;
         position: relative;
         display: flex;
@@ -276,7 +276,3 @@ em {
         transform: scale(1.2);
     }
 }
-
-
-
-
